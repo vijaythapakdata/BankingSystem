@@ -1,0 +1,113 @@
+Home As screen:
+    Fill: =RGBA(214, 221, 224, 0.5)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =96
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Header1 As Header:
+            DisplayMode: =DisplayMode.Edit
+            Height: =96
+            IsProfilePictureVisible: =false
+            LayoutMinHeight: =75
+            LayoutMinWidth: =Parent.Width
+            Logo: ='download (7)'
+            OnSelectLogo: =false
+            Title: ="Bank Management System"
+            UserEmail: =User().Email
+            UserImage: =User().Image
+            UserName: =User().FullName
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Container3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =148
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =488
+        X: =57
+        Y: =231
+        ZIndex: =3
+
+        ButtonCanvas1 As Button:
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =30
+            Height: =148
+            Icon: ="Open"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            OnSelect: =Navigate('Open Account',ScreenTransition.CoverRight)
+            Text: =
+            Width: =488
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Container3_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =148
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =488
+        X: =619
+        Y: =231
+        ZIndex: =4
+
+        ButtonCanvas1_1 As Button:
+            AccessibleLabel: =
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =30
+            Height: =148
+            Icon: ="Home"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            OnSelect: =Navigate(Details)
+            Text: =
+            Width: =488
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Container4 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =84
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        Y: =684
+        ZIndex: =5
+
+        Label1 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Primary
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            PaddingLeft: =20
+            Size: =13
+            Text: ="All rights reserved with Reserve Bank of India 🏦"
+            Width: =Parent.Width
+            ZIndex: =1
+
